@@ -2,9 +2,6 @@
     <panel :class="$style.panel">
         <ul :class="$style.content">
             <li>
-                <img src="//img12.360buyimg.com/jrpmobile/jfs/t2842/350/3035567089/14791/5f6ff93d/577cf395N31e76288.png?width=1125&height=252" alt="">
-            </li>
-            <li>
                 <div>
                     <img src="//img12.360buyimg.com/jrpmobile/jfs/t2971/333/1297567079/898/f2d2e00d/577dc28dNe5138337.png?width=108&height=108" alt="">
                     <p>客户端</p>
@@ -48,11 +45,7 @@ export default {
             li{
                 width: 100%;
                 font-size: 24px;
-                >img {
-                    width: 100%;
-                    height: 143px;
-                }
-                &:nth-child(2) {
+                &:nth-child(1) {
                     @include flex(row);
                     padding-top: 40px;
                     margin-bottom: 20px;
@@ -75,7 +68,7 @@ export default {
                         }
                     }
                 }
-                &:nth-child(n+3) {
+                &:nth-child(n+2) {
                     padding: 24px 0;
                     text-align: center;
                     // height: 86px;
