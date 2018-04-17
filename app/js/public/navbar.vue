@@ -64,7 +64,7 @@ export default {
         bottom: 0;
         margin: 0;
         height: 100px;
-        z-index: 999;
+        z-index: 600;
         .content{
             @include flex(row);
             li{

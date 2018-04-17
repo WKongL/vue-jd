@@ -1,8 +1,11 @@
 <template>
     <div :class="$style.header">
-        <span :class="$style.left">
-            <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
-        </span>
+        <router-link to="/login">
+            <span :class="$style.left">
+                <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
+            </span>
+        </router-link>
+        
         <btn :class="$style.btnDownload">APP下载</btn>
     </div>
 </template>
