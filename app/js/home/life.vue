@@ -2,10 +2,10 @@
     <panel title="生活服务" :class="$style.panel">
         <ul :class="$style.content">
             <li :class="$style.item" v-for="item in items" :key="item.src">
-                <router-link to="/">
+                <router-link :to="{name: 'home'}">
                     <img :src="item.src" :alt="item.text">
-                    <p>{{item.text}}</p>
-                    <p v-if="item.update">{{item.update}}</p>
+                    <span>{{item.text}}</span>
+                    <span v-if="item.update">{{item.update}}</span>
                 </router-link>
             </li>
         </ul>
@@ -64,7 +64,8 @@ export default {
                     width: 90px;
                     height: 90px;
                 }
-                p {
+                span {
+                    display: block;
                     margin-top: 12px;
                     color: #666;
                     font-size: 26px;

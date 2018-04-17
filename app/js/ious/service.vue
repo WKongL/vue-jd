@@ -4,7 +4,7 @@
             <li :class="$style.item" v-for="item in items" :key="item.src">
                 <router-link to="/">
                     <img :src="item.src" :alt="item.text">
-                    <p>{{item.text}}</p>
+                    <span>{{item.text}}</span>
                 </router-link>
             </li>
         </ul>
@@ -68,7 +68,8 @@ export default {
                     width: 90px;
                     height: 90px;
                 }
-                p {
+                span {
+                    display: block;
                     margin-top: 12px;
                     color: #666;
                     font-size: 26px;
