@@ -1,11 +1,13 @@
 <template>
     <div :class="$style.header">
-        <router-link to="/login">
-            <span :class="$style.left">
-                <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
-            </span>
-        </router-link>
-        
+        <span :class="$style.left">
+            <router-link to="/register">
+                <em>注册</em>
+            </router-link>&nbsp;|&nbsp;
+            <router-link to="/login">
+                <em>登录</em>
+            </router-link>
+        </span>
         <btn :class="$style.btnDownload">APP下载</btn>
     </div>
 </template>
@@ -41,6 +43,9 @@ export default {
         line-height: 30px;
         font-size: 28px;
         color: #666;
+        a {
+            color: #666;
+        }
     }
     .btnDownload {
         float: right;

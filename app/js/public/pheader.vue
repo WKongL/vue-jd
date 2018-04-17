@@ -1,12 +1,18 @@
 <template>
     <div :class="$style.header">
         <span :class="$style['icon-back']" @click="back"></span>
-        <h4 :class="$style.title">登录</h4>
+        <h4 :class="$style.title">{{title}}</h4>
     </div>
 </template>
 
 <script>
 export default {
+    props: {
+        title: {
+            type: String,
+            default: ''
+        }
+    },
     methods: {
         back() {
             this.$router.back();
@@ -43,6 +49,9 @@ export default {
             top: 0;
             left: 10%;
             width: 80%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
     

@@ -1,7 +1,7 @@
 <template>
     <transition name="login-fade">
         <div :class="$style.userlogin">
-            <l-header></l-header>
+            <p-header title="登录"></p-header>
             <section :class="$style.content">
                 <ul :class="$style.tab">
                     <li :class="$style['tab-item']" @click="selectClass(index)" v-for="(item,index) in switchs" :key="item.name">
@@ -16,7 +16,7 @@
                             <i :class="[$style.icon,$style['icon-clock']]"></i>
                             <span>忘记密码</span>
                         </router-link>
-                        <router-link to="/">
+                        <router-link to="/register">
                             <i :class="[$style.icon,$style['icon-reg']]"></i>
                             <span>手机快速注册</span>
                         </router-link>
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import LHeader from './lheader.vue'
+import PHeader from '../public/pheader.vue'
 import UserLogin from './userLogin.vue'
 import PhoneLogin from './phoneLogin.vue'
 export default {
@@ -48,7 +48,7 @@ export default {
         }
     },
     components: {
-        LHeader,
+        PHeader,
         UserLogin,
         PhoneLogin
     }

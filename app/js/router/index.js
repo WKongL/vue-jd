@@ -6,6 +6,7 @@ import Ious from "../ious/index.vue"
 import Raise from "../raise/index.vue"
 import Myhome from "../myhome/index.vue"
 import Login from "../login/index.vue"
+import Register from "../register/index.vue"
 
 Vue.use(Router)
 
@@ -40,6 +41,10 @@ export default new Router({
             path: "/login",
             name: "login",
             component: Login,
+        },{
+           path: "/register",
+           name: "register",
+           component: Register 
         }
     ],
 })
