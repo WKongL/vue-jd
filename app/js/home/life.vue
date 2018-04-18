@@ -2,7 +2,7 @@
     <panel title="生活服务" :class="$style.panel">
         <ul :class="$style.content">
             <li :class="$style.item" v-for="item in items" :key="item.src">
-                <router-link :to="{name: 'home'}">
+                <router-link to="/">
                     <img :src="item.src" :alt="item.text">
                     <span>{{item.text}}</span>
                     <span v-if="item.update">{{item.update}}</span>

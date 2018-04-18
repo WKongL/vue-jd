@@ -2,7 +2,7 @@
     <panel title="更多服务" :class="$style.panel">
         <ul :class="$style.content">
             <li :class="$style.item" v-for="item in items" :key="item.src">
-                <router-link to="/">
+                <router-link to="/ious">
                     <img :src="item.src" :alt="item.text">
                     <span>{{item.text}}</span>
                 </router-link>
