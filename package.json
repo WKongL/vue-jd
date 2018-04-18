@@ -1,5 +1,5 @@
 {
-  "name": "JDFinance",
+  "name": "vue-jd",
   "version": "1.0.0",
   "description": "component with vue 2.5 and es6",
   "main": "index.js",
@@ -9,19 +9,12 @@
     "start": "webpack-dev-server --open",
     "build": "webpack --env.production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/imooc/vuejs.git"
-  },
   "keywords": [
     "es6",
     "component"
   ],
-  "author": "cuc_ygh@163.com",
+  "author": "wkongl",
   "license": "MIT",
-  "bugs": {
-    "url": "https://gitlab.com/imooc/vuejs/issues"
-  },
   "eslintConfig": {
     "root": true,
     "parserOptions": {
@@ -62,7 +55,6 @@
     "node_modules",
     "webpack.config.js"
   ],
-  "homepage": "https://gitlab.com/imooc/vuejs#README",
   "dependencies": {
     "autoprefixer": "^8.3.0",
     "clean-webpack-plugin": "^0.1.17",
