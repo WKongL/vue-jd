@@ -32,7 +32,8 @@ export default {
     line-height: 100px;
     color: #666;
     font-size: 32px;
-    background: #fff url(//m.jr.jd.com/spe/qyy/main/images/jr-logo.png) center center no-repeat;
+    // background: #fff url(//m.jr.jd.com/spe/qyy/main/images/jr-logo.png) center center no-repeat;
+    background-color: #fff;
     background-size: auto 50%;
     z-index: 100;
     .left {
